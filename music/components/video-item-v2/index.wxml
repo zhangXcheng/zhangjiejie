@@ -1,0 +1,15 @@
+<!--components/video-item-v2/index.wxml-->
+<wxs src='../../utils/format.wxs' module="format"></wxs>
+<block wx:for="{{list}}" wx:key="vid">
+  <view class="item">
+    <view class="left">
+      <image class="img" mode="widthFix" src="{{item.coverUrl}}"></image>
+      <view class="playIcon">{{format.formatCount(item.playTime)}}</view>
+    </view>
+    
+    <view class="content">
+      <text class="title">{{item.title}}</text>
+      <text class="user">{{item.creator[0].userName}}</text>
+    </view>
+  </view>
+</block>

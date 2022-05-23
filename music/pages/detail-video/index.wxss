@@ -1,0 +1,31 @@
+/* pages/detail-video/index.wxss */
+page {
+  padding-top: 225px;
+}
+
+.video {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.detail text {
+  display: block;
+  margin: 20rpx;
+}
+
+.detail .name {
+  font-family: 700;
+  font-size: 40rpx;
+}
+
+.detail .common {
+  color: gray;
+  font-size: 25rpx;
+}
+
+.scrollView {
+  margin: 0 20rpx;
+}
+
